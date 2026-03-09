@@ -13,7 +13,7 @@ from .base import BaseAgent
 
 # Import decrypt utilities for encrypted test files
 try:
-    from decrypt_utils import decrypt_file_to_memory, read_canary
+    from decrypt import decrypt_file_to_memory, read_canary
     DECRYPT_AVAILABLE = True
 except ImportError:
     DECRYPT_AVAILABLE = False
