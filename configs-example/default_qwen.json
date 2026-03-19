@@ -1,0 +1,18 @@
+{
+  "agent_type": "cocoa",
+  "log_level": "DEBUG",
+  "use_encrypted_tasks": false,
+  "controller": {
+      "type": "qwen",
+      "args": {
+          "model": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+          "base_url": "http://localhost:8005/v1",
+          "api_key": "EMPTY"
+      }
+  },
+  "sandbox": {
+      "client_type": "unified",
+      "docker_port": 8084,
+      "max_iterations": 50
+  }
+}

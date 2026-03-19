@@ -1,5 +1,8 @@
 # Contributing to CocoaBench
 
+
+> **Notice**: We will consider all tasks submitted by March 15, 2026 for inclusion in our paper submission to COLM 2026. We also warmly welcome additional task contributions after that date, as we will continue expanding CocoaBench and hope to include new tasks in future releases.
+
 Thank you for your interest in contributing to CocoaBench! 🎉
 
 We'd love to have your help in building a diverse and challenging benchmark. The best tasks come from real problems you've encountered — if it challenged you, it'll likely challenge AI agents too! Contributors with **3 accepted tasks** are eligible for co-authorship on the CocoaBench paper, which we plan to submit to a top-tier ML conference. We'll work with you through iterative refinement to help get your tasks accepted and ensure they meet benchmark standards. Particularly interesting or creative tasks may count for more at the discretion of project leads.
@@ -40,10 +43,11 @@ python validate_task.py your-task-name --check-encrypted
 
 Great tasks tend to share these qualities:
 
-- 🧩 Require **multi-step solutions** — not just a single lookup
+- 🧩 Require **multi-step solutions** — long-horizon tasks that take at least 5 minutes for humans or agents to complete, not just a single lookup
 - ✓ Have **clear, deterministic answers** — evaluated via **exact match** (see [Answer Format Requirements](#answer-format-requirements))
-- 🌐 Involve **web browsing, visual perception, or file processing**
-- 🔧 Combine **multiple tools** (e.g., search + calculation + code)
+- 🆕 **Distinctly different from existing tasks** — avoid duplicating scenarios already covered in the benchmark
+
+> ⭐ **Required:** New tasks should highlight **combining GUI interaction with coding abilities**. For example, tasks where the agent must interact with a web UI to gather data, and write code to process or analyze it. These tasks test the agent's ability to seamlessly switch between visual/interactive skills and programming skills, which is a key capability for real-world agentic workflows.
 
 Feel free to browse our [example tasks](https://cocoabench.github.io/#examples) for inspiration!
 

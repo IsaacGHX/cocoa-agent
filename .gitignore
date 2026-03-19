@@ -42,18 +42,19 @@ uv.lock
 
 # Project-specific
 temp.log
-results/*
 outputs/*
-gpt-outputs/*
+outputs-*/*
 trash/*
 
 tasks/*
 
 configs/*
-!configs/default_human.json
-!configs/default_gpt.json
-
 # dataset files
 cocoa-bench-v0.1/
 *.zip
 
+# local generated assets for plotdigitizer task authoring
+cocoabench-head/plotdigitizer-data-extraction/generated_plotdigitizer_tasks/
+
+# Exclude local working task
+cocoabench-head/yearly-costco-receipts
