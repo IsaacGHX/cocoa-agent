@@ -472,7 +472,7 @@ class OpenAIDeepResearchAgent(BaseAgent):
             
             if use_encrypted:
                 if not DECRYPT_AVAILABLE:
-                    raise ImportError("decrypt_utils not available but use_encrypted=True")
+                    raise ImportError("decrypt not available but use_encrypted=True")
                 
                 task_dir = Path(task.get("task_dir"))
                 canary = read_canary(task_dir)
